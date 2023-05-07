@@ -23,6 +23,7 @@
 #endif /// !HEX_CORE_CFG_API_HPP
 
 // Include Windows API
+#define NOMINMAX // hack to avoid conflicts with numeric_limits::max()
 #include <Windows.h>
 
 // Include STL atomic
