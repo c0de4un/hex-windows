@@ -12,7 +12,8 @@ set( HEX_WIN_DIR "${CMAKE_CURRENT_SOURCE_DIR}/windows" )
 
 set( HEX_WIN_PUBLIC "${HEX_WIN_DIR}/public/hex/windows/" )
 set( HEX_WIN_HEADERS
-    ""
+    # ASYNC
+    "${HEX_WIN_PUBLIC}async/WinMutex.hpp"
 )
 
 # DEBUG
@@ -33,7 +34,8 @@ set( HEX_EXPORT_HEADERS ${HEX_WIN_HEADERS} ${HEX_EXPORT_HEADERS} )
 
 set( HEX_WIN_PRIVATE "${HEX_WIN_DIR}/private/hex/windows/" )
 set( HEX_WIN_SOURCES
-    ""
+    # ASYNC
+    "${HEX_WIN_PRIVATE}async/WinMutex.cpp"
 )
 
 # DEBUG
