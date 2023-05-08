@@ -43,7 +43,7 @@ if ( HEX_DEBUG OR HEX_LOGGING )
     set( HEX_WIN_SOURCES
         # METRICS
         "${HEX_WIN_PRIVATE}metrics/WinConsoleLogger.cpp"
-        ${HEX_WIN_HEADERS}
+        ${HEX_WIN_SOURCES}
     )
 endif ( HEX_DEBUG OR HEX_LOGGING )
 

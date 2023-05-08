@@ -73,7 +73,7 @@ namespace hex
             return result;
         }
 
-        void* WinMutex::native_handle() const noexcept
+        void* WinMutex::native_handle() noexcept
         {
             return static_cast<void*>(&mMutex);
         }

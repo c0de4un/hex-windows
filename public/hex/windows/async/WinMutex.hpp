@@ -120,7 +120,7 @@ namespace hex
             // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
             bool isLocked() const noexcept;
-            void* native_handle() const noexcept;
+            void* native_handle() noexcept;
 
             // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
             // METHODS
