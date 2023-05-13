@@ -20,12 +20,13 @@
 #endif /// !HEX_WIN_CONSOLE_LOGGER_HPP
 
 // Include hex::core::Log
-#ifndef HEX_CORE_LOG_HPP
-    #include <hex/core/metrics/Log.hpp>
-#endif /// !HEX_CORE_LOG_HPP
+#include <hex/core/metrics/Log.hpp>
+
+// Include STL iostream
+#include <iostream>
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-//
+// WinConsoleLogger
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 namespace hex
@@ -50,22 +51,22 @@ namespace hex
 
         void WinConsoleLogger::printInfo(const char* const msg) HEX_NOEXCEPT
         {
-
+            std::cout << "INFO: " << msg << "\n";
         }
 
         void WinConsoleLogger::printDebug(const char* const msg) HEX_NOEXCEPT
         {
-
+            std::cout << "DEBUG: " << msg << "\n";
         }
 
         void WinConsoleLogger::printWarning(const char* const msg) HEX_NOEXCEPT
         {
-
+            std::cout << "WARNING: " << msg << "\n";
         }
 
         void WinConsoleLogger::printError(const char* const msg) HEX_NOEXCEPT
         {
-
+            std::cout << "ERROR: " << msg << "\n";
         }
 
         // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
