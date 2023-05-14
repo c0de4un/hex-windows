@@ -14,6 +14,8 @@ set( HEX_WIN_PUBLIC "${HEX_WIN_DIR}/public/hex/windows/" )
 set( HEX_WIN_HEADERS
     # ASYNC
     "${HEX_WIN_PUBLIC}async/WinMutex.hpp"
+    # GRAPHICS
+    "${HEX_WIN_PUBLIC}graphics/WinGraphics.hpp"
 )
 
 # DEBUG
@@ -36,6 +38,8 @@ set( HEX_WIN_PRIVATE "${HEX_WIN_DIR}/private/hex/windows/" )
 set( HEX_WIN_SOURCES
     # ASYNC
     "${HEX_WIN_PRIVATE}async/WinMutex.cpp"
+    # GRAPHICS
+    "${HEX_WIN_PRIVATE}graphics/WinGraphics.cpp"
 )
 
 # DEBUG
