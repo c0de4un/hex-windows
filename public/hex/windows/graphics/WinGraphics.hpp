@@ -22,6 +22,11 @@
     #include <hex/core/graphics/GraphicsSystem.hpp>
 #endif /// !HEX_CORE_GRAPHICS_SYSTEM_HPP
 
+// Include hex::gl
+#ifndef HEX_GL_CFG_HPP
+    #include <hex/gl/cfg/hex_gl.hpp>
+#endif /// !HEX_GL_CFG_HPP
+
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 // WinGraphics
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
