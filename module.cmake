@@ -16,6 +16,8 @@ set( HEX_WIN_HEADERS
     "${HEX_WIN_PUBLIC}async/WinMutex.hpp"
     # GRAPHICS
     "${HEX_WIN_PUBLIC}graphics/WinGraphics.hpp"
+    # ASSETS
+    "${HEX_WIN_PUBLIC}assets/WinAssets.hpp"
 )
 
 # DEBUG
@@ -40,6 +42,8 @@ set( HEX_WIN_SOURCES
     "${HEX_WIN_PRIVATE}async/WinMutex.cpp"
     # GRAPHICS
     "${HEX_WIN_PRIVATE}graphics/WinGraphics.cpp"
+    # ASSETS
+    "${HEX_WIN_PRIVATE}assets/WinAssets.cpp"
 )
 
 # DEBUG
